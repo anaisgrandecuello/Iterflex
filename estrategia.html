@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategia y Modelo de Negocio | Iterflex</title>
+    <meta name="description" content="Descubra la visi&oacute;n estrat&eacute;gica de Iterflex: soluciones de fontaner&iacute;a profesional con un modelo de negocio escalable y orientado al inversor.">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts: Inter & Oswald -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        iterBlue: "#003350",
+                        iterGreen: "#009F98",
+                        iterGreenLight: "#A2DBD7",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        display: ["Oswald", "sans-serif"],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .nav-glass {
+            background: rgba(0, 51, 80, 0.9);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-iterBlue">
+
+        <!-- Navbar -->
+    <nav class="fixed w-full z-50 nav-glass border-b border-iterBlue/20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center h-20">
+            <a href="https://www.iterflex.com" target="_blank" class="flex items-center"><img src="assets/LOGO_BLANCO.png" alt="Iterflex Logo" style="height: 112px;"></a>
+            
+            <div class="hidden md:flex space-x-10 text-white uppercase tracking-wider text-sm font-semibold">
+                <a href="index.html" class="hover:text-iterGreen transition-colors duration-300">Home</a>
+                <a href="nosotros.html" class="hover:text-iterGreen transition-colors duration-300">Nosotros</a>
+                <a href="estrategia.html" class="hover:text-iterGreen transition-colors duration-300">Estrategia</a>
+                <a href="metricas.html" class="hover:text-iterGreen transition-colors duration-300">M&eacute;tricas</a>
+                <a href="mercado.html" class="hover:text-iterGreen transition-colors duration-300">Mercado</a>
+            </div>
+            
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header Interno -->
+    <header class="pt-32 pb-20 bg-iterBlue text-white text-center px-6">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="font-display text-4xl md:text-5xl font-bold mb-4 uppercase tracking-tight">Estrategia y Modelo de Negocio</h1>
+            <p class="text-iterGreenLight text-lg font-semibold uppercase tracking-widest">Oportunidad de Mercado y Escalabilidad</p>
+        </div>
+    </header>
+
+    <!-- Misi&oacute;n y Visi&oacute;n -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-white p-10 md:p-16 rounded-2xl shadow-xl border-l-8 border-iterGreen">
+                <h2 class="font-display text-3xl font-bold mb-8 text-iterBlue">Nuestra Misi&oacute;n</h2>
+                <p class="text-xl leading-relaxed text-slate-700 mb-8 italic">
+                    "Iterflex nace para ser la respuesta definitiva al profesional de la fontaner&iacute;a que demanda material de alta calidad, precios competitivos y un trato humano y experto."
+                </p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-iterGreen/10 p-3 rounded-lg text-iterGreen"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg></div><div><h4 class="font-bold text-iterBlue mb-1">Calidad Profesional</h4>
+                            <p class="text-slate-600 text-sm">Est&aacute;ndares industriales para instalaciones cr&iacute;ticas.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-iterGreen/10 p-3 rounded-lg text-iterGreen">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-iterBlue mb-1">Precio Competitivo</h4>
+                            <p class="text-slate-600 text-sm">Optimizaci&oacute;n de costes para maximizar el margen del partner.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-iterGreen/10 p-3 rounded-lg text-iterGreen">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-iterBlue mb-1">Trato Cercano</h4>
+                            <p class="text-slate-600 text-sm">Asesoramiento t&eacute;cnico personalizado y directo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestros Diferenciales -->
+    <section class="py-20 bg-slate-100 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-4xl font-bold text-center mb-16 text-iterBlue uppercase">Nuestros Diferenciales Competitivos</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Bloque 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-iterGreen">
+                    <div class="w-16 h-16 bg-iterBlue text-iterGreen rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-iterBlue">Especializaci&oacute;n en Nicho</h3>
+                    <p class="text-slate-600">Acceso exclusivo a productos t&eacute;cnicos y medidas espec&iacute;ficas que son dif&iacute;ciles de encontrar en suministros generales.</p>
+                </div>
+                <!-- Bloque 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-iterGreen">
+                    <div class="w-16 h-16 bg-iterBlue text-iterGreen rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-iterBlue">Transparencia Operativa</h3>
+                    <p class="text-slate-600">Gesti&oacute;n de productos bajo pedido con total trazabilidad, eliminando la incertidumbre en proyectos profesionales.</p>
+                </div>
+                <!-- Bloque 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-iterGreen">
+                    <div class="w-16 h-16 bg-iterBlue text-iterGreen rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-iterBlue">Expertise vs Marketplaces</h3>
+                    <p class="text-slate-600">Soporte t&eacute;cnico humano frente a la despersonalizaci&oacute;n de las grandes plataformas generalistas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- P&uacute;blico Objetivo -->
+    <section class="py-24 px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="flex-1">
+                <h2 class="font-display text-4xl font-bold mb-8 text-iterBlue uppercase">P&uacute;blico Objetivo y Pilares de Crecimiento</h2>
+                <p class="text-lg text-slate-600 mb-12">
+                    Nuestro modelo de negocio se asienta sobre dos perfiles de cliente clave que garantizan la salud financiera y la escalabilidad del proyecto.
+                </p>
+                
+                <!-- Pilar 1 -->
+                <div class="mb-10 group">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-iterBlue text-white w-12 h-12 flex items-center justify-center rounded-full font-bold text-xl mr-4 group-hover:bg-iterGreen transition-colors">01</div>
+                        <h4 class="text-2xl font-bold text-iterBlue">Estabilidad: El Cliente Recurrente</h4>
+                    </div>
+                    <p class="text-slate-600 pl-16">
+                        Profesionales y empresas de reforma que conf&iacute;an en Iterflex para su suministro diario. Aportan una base de ingresos predecible y fidelidad a largo plazo.
+                    </p>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="group">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-iterBlue text-white w-12 h-12 flex items-center justify-center rounded-full font-bold text-xl mr-4 group-hover:bg-iterGreen transition-colors">02</div>
+                        <h4 class="text-2xl font-bold text-iterBlue">Crecimiento: El Especialista T&eacute;cnico</h4>
+                    </div>
+                    <p class="text-slate-600 pl-16">
+                        Instaladores que buscan soluciones espec&iacute;ficas y asesoramiento experto para proyectos de alta complejidad. Son nuestro motor de expansi&oacute;n y posicionamiento de marca.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-1 bg-iterBlue p-10 rounded-3xl text-white relative">
+                <div class="absolute -top-4 -right-4 bg-iterGreen p-4 rounded-xl shadow-lg animate-pulse">
+                    <span class="font-bold text-sm">CAPACIDAD DE ESCALA</span>
+                </div>
+                <h3 class="text-3xl font-display font-bold mb-6">Visi&oacute;n de Negocio</h3>
+                <ul class="space-y-6">
+                    <li class="flex items-start">
+                        <span class="text-iterGreen mr-3 font-bold text-xl">&bull;</span>
+                        <span>Fidelizaci&oacute;n mediante expertise t&eacute;cnico.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-iterGreen mr-3 font-bold text-xl">&bull;</span>
+                        <span>Cat&aacute;logo optimizado para alta rotaci&oacute;n.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-iterGreen mr-3 font-bold text-xl">&bull;</span>
+                        <span>Estructura ligera y digitalmente eficiente.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+    <footer class="bg-iterBlue text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <img src="assets/LOGO_BLANCO%20CLAIM.png" alt="Iterflex Logo" style="height: 70px;" class="mb-6">
+                <p class="text-white/60 text-sm leading-relaxed">
+                    Iterflex es el partner estrat&eacute;gico en soluciones de agua para profesionales, combinando tecnolog&iacute;a avanzada y servicio personalizado.
+                </p>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <h4 class="font-bold text-lg mb-2">Compa&ntilde;&iacute;a</h4>
+                <a href="nosotros.html" class="text-white/60 hover:text-iterGreen transition-colors">Sobre Nosotros</a>
+                <a href="nosotros.html#propuesta" class="text-white/60 hover:text-iterGreen transition-colors">Propuesta de Valor</a>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <h4 class="font-bold text-lg mb-2">Legal</h4>
+                <a href="aviso-legal.html" class="text-white/60 hover:text-iterGreen transition-colors">Aviso Legal</a>
+                <a href="privacidad.html" class="text-white/60 hover:text-iterGreen transition-colors">Pol&iacute;tica de Privacidad</a>
+                <a href="cookies.html" class="text-white/60 hover:text-iterGreen transition-colors">Cookies</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/10 text-center text-white/40 text-sm">
+            &copy; 2026 Iterflex. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>

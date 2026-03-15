@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterflex | Soluciones Eficaces para el Agua</title>
+    <meta name="description" content="Iterflex es una empresa l&iacute;der en accesorios de fontaner&iacute;a profesional, enfocada en soluciones tecnol&oacute;gicas y escalables para inversores y partners.">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts: Inter & Oswald -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        iterBlue: "#003350",
+                        iterGreen: "#009F98",
+                        iterGreenLight: "#A2DBD7",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        display: ["Oswald", "sans-serif"],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hero-video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        
+        .hero-video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        .overlay {
+            background: linear-gradient(135deg, rgba(0, 51, 80, 0.85) 0%, rgba(0, 51, 80, 0.4) 100%);
+        }
+
+        .nav-glass {
+            background: rgba(0, 51, 80, 0.8);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-white font-sans text-iterBlue">
+
+        <!-- Navbar -->
+    <nav class="fixed w-full z-50 nav-glass border-b border-iterBlue/20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center h-20">
+            <a href="https://www.iterflex.com" target="_blank" class="flex items-center"><img src="assets/LOGO_BLANCO.png" alt="Iterflex Logo" style="height: 112px;"></a>
+            
+            <div class="hidden md:flex space-x-10 text-white uppercase tracking-wider text-sm font-semibold">
+                <a href="index.html" class="hover:text-iterGreen transition-colors duration-300">Home</a>
+                <a href="nosotros.html" class="hover:text-iterGreen transition-colors duration-300">Nosotros</a>
+                <a href="estrategia.html" class="hover:text-iterGreen transition-colors duration-300">Estrategia</a>
+                <a href="metricas.html" class="hover:text-iterGreen transition-colors duration-300">M&eacute;tricas</a>
+                <a href="mercado.html" class="hover:text-iterGreen transition-colors duration-300">Mercado</a>
+            </div>
+            
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center px-6">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="assets/Logo_animado.mp4" type="video/mp4">
+                Tu navegador no soporta v&iacute;deos.
+            </video>
+            <div class="absolute inset-0 overlay"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl animate-fade-in-up">
+            <h1 class="font-display text-4xl md:text-6xl text-white font-bold leading-tight mb-8">
+                Soluciones eficaces para el agua: <br>
+                <span class="text-iterGreen">tecnolog&iacute;a y servicio profesional</span> <br>
+                para un mercado escalable
+            </h1>
+            <p class="text-xl text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Iterflex redefine la fontaner&iacute;a profesional con innovaci&oacute;n, solidez estrat&eacute;gica y un compromiso inquebrantable con la eficiencia operativa.
+            </p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 mt-8">
+                <a href="estrategia.html" class="group bg-white/10 backdrop-blur-md border border-white/30 p-8 rounded-2xl hover:bg-iterGreen hover:border-iterGreen transition-all duration-300 transform hover:scale-105 shadow-xl">
+                    <h3 class="text-white font-display text-xl font-bold uppercase mb-2">Ver Estrategia</h3>
+                    <p class="text-white/70 text-sm group-hover:text-white transition-colors">Modelo de negocio y visi&oacute;n</p>
+                </a>
+                <a href="metricas.html" class="group bg-white/10 backdrop-blur-md border border-white/30 p-8 rounded-2xl hover:bg-iterGreen hover:border-iterGreen transition-all duration-300 transform hover:scale-105 shadow-xl">
+                    <h3 class="text-white font-display text-xl font-bold uppercase mb-2">M&eacute;tricas 2025</h3>
+                    <p class="text-white/70 text-sm group-hover:text-white transition-colors">KPIs y resultados de crecimiento</p>
+                </a>
+                <a href="mercado.html" class="group bg-white/10 backdrop-blur-md border border-white/30 p-8 rounded-2xl hover:bg-iterGreen hover:border-iterGreen transition-all duration-300 transform hover:scale-105 shadow-xl">
+                    <h3 class="text-white font-display text-xl font-bold uppercase mb-2">An&aacute;lisis Mercado</h3>
+                    <p class="text-white/70 text-sm group-hover:text-white transition-colors">Posicionamiento y competencia</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+    <footer class="bg-iterBlue text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <img src="assets/LOGO_BLANCO%20CLAIM.png" alt="Iterflex Logo" style="height: 70px;" class="mb-6">
+                <p class="text-white/60 text-sm leading-relaxed">
+                    Iterflex es el partner estrat&eacute;gico en soluciones de agua para profesionales, combinando tecnolog&iacute;a avanzada y servicio personalizado.
+                </p>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <h4 class="font-bold text-lg mb-2">Compa&ntilde;&iacute;a</h4>
+                <a href="nosotros.html" class="text-white/60 hover:text-iterGreen transition-colors">Sobre Nosotros</a>
+                <a href="nosotros.html#propuesta" class="text-white/60 hover:text-iterGreen transition-colors">Propuesta de Valor</a>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <h4 class="font-bold text-lg mb-2">Legal</h4>
+                <a href="aviso-legal.html" class="text-white/60 hover:text-iterGreen transition-colors">Aviso Legal</a>
+                <a href="privacidad.html" class="text-white/60 hover:text-iterGreen transition-colors">Pol&iacute;tica de Privacidad</a>
+                <a href="cookies.html" class="text-white/60 hover:text-iterGreen transition-colors">Cookies</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/10 text-center text-white/40 text-sm">
+            &copy; 2026 Iterflex. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const heroContent = document.querySelector(".animate-fade-in-up");
+            heroContent.style.opacity = "0";
+            heroContent.style.transform = "translateY(20px)";
+            heroContent.style.transition = "opacity 1s ease-out, transform 1s ease-out";
+            
+            setTimeout(() => {
+                heroContent.style.opacity = "1";
+                heroContent.style.transform = "translateY(0)";
+            }, 300);
+        });
+    </script>
+</body>
+</html>

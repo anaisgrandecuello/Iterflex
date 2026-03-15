@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pol&iacute;tica de Cookies | Iterflex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { iterBlue: "#003350", iterGreen: "#009F98", iterGreenLight: "#A2DBD7" },
+                    fontFamily: { sans: ["Inter", "sans-serif"], display: ["Oswald", "sans-serif"] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .nav-glass { background: rgba(0, 51, 80, 0.9); backdrop-filter: blur(8px); }
+    </style>
+</head>
+<body class="bg-white font-sans text-iterBlue">
+        <!-- Navbar -->
+    <nav class="fixed w-full z-50 nav-glass border-b border-iterBlue/20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center h-20">
+            <a href="https://www.iterflex.com" target="_blank" class="flex items-center"><img src="assets/LOGO_BLANCO.png" alt="Iterflex Logo" style="height: 112px;"></a>
+            
+            <div class="hidden md:flex space-x-10 text-white uppercase tracking-wider text-sm font-semibold">
+                <a href="index.html" class="hover:text-iterGreen transition-colors duration-300">Home</a>
+                <a href="nosotros.html" class="hover:text-iterGreen transition-colors duration-300">Nosotros</a>
+                <a href="estrategia.html" class="hover:text-iterGreen transition-colors duration-300">Estrategia</a>
+                <a href="metricas.html" class="hover:text-iterGreen transition-colors duration-300">M&eacute;tricas</a>
+                <a href="mercado.html" class="hover:text-iterGreen transition-colors duration-300">Mercado</a>
+            </div>
+            
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+        <header class="pt-32 pb-10 bg-iterBlue text-white text-center px-6">
+        <h1 class="font-display text-4xl font-bold uppercase">Pol&iacute;tica de Cookies</h1>
+    </header>
+    <section class="py-16 px-6 max-w-4xl mx-auto space-y-8">
+        <p>Este sitio web utiliza cookies t&eacute;cnicas y anal&iacute;ticas para mejorar la experiencia del usuario. No se utilizan cookies de seguimiento publicitario sin su consentimiento previo.</p>
+    </section>
+        <!-- Footer -->
+    <footer class="bg-iterBlue text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <img src="assets/LOGO_BLANCO%20CLAIM.png" alt="Iterflex Logo" style="height: 70px;" class="mb-6">
+                <p class="text-white/60 text-sm leading-relaxed">
+                    Iterflex es el partner estrat&eacute;gico en soluciones de agua para profesionales, combinando tecnolog&iacute;a avanzada y servicio personalizado.
+                </p>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <h4 class="font-bold text-lg mb-2">Compa&ntilde;&iacute;a</h4>
+                <a href="nosotros.html" class="text-white/60 hover:text-iterGreen transition-colors">Sobre Nosotros</a>
+                <a href="nosotros.html#propuesta" class="text-white/60 hover:text-iterGreen transition-colors">Propuesta de Valor</a>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <h4 class="font-bold text-lg mb-2">Legal</h4>
+                <a href="aviso-legal.html" class="text-white/60 hover:text-iterGreen transition-colors">Aviso Legal</a>
+                <a href="privacidad.html" class="text-white/60 hover:text-iterGreen transition-colors">Pol&iacute;tica de Privacidad</a>
+                <a href="cookies.html" class="text-white/60 hover:text-iterGreen transition-colors">Cookies</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/10 text-center text-white/40 text-sm">
+            &copy; 2026 Iterflex. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>
